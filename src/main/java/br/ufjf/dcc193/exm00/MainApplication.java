@@ -9,6 +9,8 @@ public class MainApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(MainApplication.class, args);
 		System.out.println("Hello World");
-	}
 
+		Missao m1 = new Missao();
+		m1.resover();
+	}
 }
