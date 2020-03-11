@@ -9,8 +9,11 @@ public class Missao {
     private Hero heroi;
 
     public Missao() {
-        heroi = new Hero();
         System.out.println("Nova missão!");
+    }
+    public void setHeroi(Hero novoHeroi)
+    {
+        this.heroi = novoHeroi;
     }
 	public void resover() {
         System.out.println(heroi.getNome() + " destruiu a missão!");

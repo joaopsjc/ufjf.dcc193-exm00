@@ -12,10 +12,14 @@ public class MainApplication {
 		 SpringApplication.run(MainApplication.class, args);
 		System.out.println("Hello World");
 
+        Hero jack = contexto.getBean(Hero.class);
+
 		Missao m1 = contexto.getBean(Missao.class);
+		m1.setHeroi(jack);
 		m1.resover();
-		
+
 		Missao m2 = contexto.getBean(Missao.class);
+		m2.setHeroi(jack);
 		m2.resover();
 	}
 }
