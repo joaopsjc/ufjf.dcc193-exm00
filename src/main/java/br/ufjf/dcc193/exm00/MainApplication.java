@@ -12,8 +12,6 @@ public class MainApplication {
 		 SpringApplication.run(MainApplication.class, args);
 		System.out.println("Hello World");
 
-        Hero jack = contexto.getBean(Hero.class);
-
 		Missao m1 = contexto.getBean(Missao.class);
 		m1.resover();
 
