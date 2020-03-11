@@ -1,5 +1,7 @@
 package br.ufjf.dcc193.exm00;
 
+import org.springframework.stereotype.Component;
+@Component
 public class Missao {
 
     public Missao() {
