@@ -6,12 +6,14 @@ import org.springframework.stereotype.Component;
 @Component
 @Scope (value = "prototype")
 public class Missao {
+    private Hero heroi;
 
     public Missao() {
+        heroi = new Hero();
         System.out.println("Nova missão!");
     }
 	public void resover() {
-        System.out.println("Missão resolvida");
+        System.out.println(heroi.getNome() + " destruiu a missão!");
 	}
 
 
