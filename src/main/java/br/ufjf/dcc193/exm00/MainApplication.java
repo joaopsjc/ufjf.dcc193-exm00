@@ -14,5 +14,8 @@ public class MainApplication {
 
 		Missao m1 = contexto.getBean(Missao.class);
 		m1.resover();
+		
+		Missao m2 = contexto.getBean(Missao.class);
+		m2.resover();
 	}
 }
